@@ -40,8 +40,23 @@ Gradle build used the Application plugin, run the application from the command l
 gradle tasks
 ```
 
-**Run** task execute the **main** method in the class assined to the **mainClassName** property.  
+**Run** task execute the **main** method in the class assined to the **mainClassName** property.
 
 ```shell
 gradle run
+```
+
+When you use java.util.scanner, get NoSuchElementException thrown.
+You wire up default stdin to gradle, put this in build.gradle.
+
+```gradle
+run{
+standardInput = System.in
+}
+```
+
+Run application without propt
+
+```shell
+gradle --console=plain run
 ```
