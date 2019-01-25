@@ -31,3 +31,54 @@ float属性
 ### 固定定位
 
 与绝对定位非常类似，除了它是将一个元素相对浏览器视口固定，而不是相对另外一个元素。
+
+## 弹性布局
+
+* 主轴是沿着flex元素放置的方向延伸的轴。该轴的开始和结束被称为main start和main end。
+* 交叉轴是垂直于flex元素放置方向的轴。该轴的开始和结束被称为cross start和cross end。
+* 设置了display: flex的父元素称之为flex容器。
+
+### 行列
+
+flex-direction指定了主轴的方向，默认值是row。
+
+```css
+/* row, row-reverse, column, column-reverse */
+flex-direction: column
+```
+
+### 换行
+
+当布局中使用定宽或者定高的时候，可能会有一个问题出来即处于容器中的子元素会溢出。
+解决这个问题方法是添加规则
+
+```css
+flex-wrap: wrap;
+flex: 200px;
+```
+
+#### flex-flow 缩写
+
+```css
+flex-flow: row wrap;
+```
+
+### flex项的动态尺寸
+
+指定一个无单位的比例值，表示每个flex项沿主轴的可用空间大小，指定 flex 的最小值。
+
+```css
+div {
+  flex: 1 200px;
+}
+```
+
+### 水平和垂直对齐
+
+```css
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+```
