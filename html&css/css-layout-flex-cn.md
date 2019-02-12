@@ -76,9 +76,23 @@ div {
 ### 水平和垂直对齐
 
 ```css
+/* stretch, center, flex-start, flex-end, space-between, space-around */
 div {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+```
+
+### flex 项排序
+
+所有flex项默认的order值是0，值越大显示顺序中更靠后。
+
+```css
+button:first-child {
+  order: 1;
+}
+button:last-child {
+  order: -1;
 }
 ```
