@@ -31,9 +31,9 @@ moment("2019-02-18", "MM-DD-YYYY").isValid();
 moment("2019-02-18", ["MM-DD-YYYY", "YYYY-MM-DD"]);
 ```
 
-[](https://github.com/ErlichChen/learning-notes/blob/master/nodejs/timeformat-1.png)
-[](https://github.com/ErlichChen/learning-notes/blob/master/nodejs/timeformat-2.png)
-[](https://github.com/ErlichChen/learning-notes/blob/master/nodejs/timeformat-3.png)
+![timeformat-1](https://github.com/ErlichChen/learning-notes/blob/master/nodejs/timeformat-1.png)
+![timeformat-2](https://github.com/ErlichChen/learning-notes/blob/master/nodejs/timeformat-2.png)
+![timeformat-3](https://github.com/ErlichChen/learning-notes/blob/master/nodejs/timeformat-3.png)
 
 ## Moment Timezone
 
