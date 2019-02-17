@@ -1,5 +1,7 @@
 # Coding Conventions
 
+[Coding Conventions](https://kotlinlang.org/docs/reference/coding-conventions.html)
+
 ## Source code organization
 
 ### Directory structure
@@ -16,6 +18,10 @@ If a file contains multiple classes, or only top-level declarations, choose a na
 The name of the file should describe what the code in hte file does. Therefore, you should avoid using meaningless words such as "Util" in file names.
 
 ### Source file organization
+
+Placing multiple declarations in te same kotlin source file is encouraged as long as these declarations are closely related to each other semantically and the file size remains reasonable.
+
+In particular, when defining functions for a class which are relevant for all clients of this class, put them in the same file where the class itself is defined. When defining extension functions that make sense only for a specific client, put them next to the code of that client. Do not create files just to hold "all extensions of Foo".
 
 ### Class layout
 
@@ -35,3 +41,5 @@ keep the implementing members in the same order as members of the interface.
 ### Overload layout
 
 Always put overloads next to each other in a class.
+
+## Naming rules
