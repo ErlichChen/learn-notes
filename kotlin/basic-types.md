@@ -28,7 +28,7 @@ Octal literals are not supported.
 
 Use underscores to make number constans more readable.
 
-```kotlin
+```java
 val oneMillion = 1_000_000
 val creditCardNumber = 1234_5678_9012_3456L
 val socialSecurityNumber = 999_99_9999L
@@ -38,7 +38,7 @@ val bytes = 0b11010010_01101001_10010100_10010010
 
 ### Boxed
 
-```kotlin
+```java
 val a: Int = 10000
 println(a == a) // Prints 'true'
 println(a === a) // Prints 'true'
@@ -47,3 +47,6 @@ val anotherBoxedA: Int? = a
 println(boxedA == anotherBoxedA) // true
 println(boxedA === anotherBoxedA) // false
 ```
+
+## Characters
+
