@@ -1,0 +1,25 @@
+@startuml
+
+(*) --> "RootView"
+
+--> "Root ViewGroup measure()"
+--> "Root ViewGroup onMeasure()"
+--> ===isViewGroup===
+
+if "is ViewGroup" then
+	--> [true] "ViewGroup measure()"
+	--> "ViewGroup onMeasure()"
+	--> ===isLoop===
+else
+	--> [false] "View measure()"
+	--> "View onMeasure()"
+	--> ===isLoop===
+endif
+
+if "is Loop" then
+	--> [true] ===isViewGroup===
+else
+	--> [false] "Measure all done"
+endif
+
+@enduml
