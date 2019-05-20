@@ -23,3 +23,9 @@ docker start -a -i image-id
 ```shell
 docker cp /opt/test/ mycontainer:/opt/testnew/file.txt
 ```
+
+### login the dcoker container
+
+```shell
+docker exec -it "container id" /bin/bash
+```
