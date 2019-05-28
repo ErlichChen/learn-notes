@@ -1,20 +1,103 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HTML elements</title>
 	</head>
 	<body>
-		<h1>HTML elements</h1>
+		<div class="top">
+			<header>
+				<h1>HTML elements</h1>
+				<p></p>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="#content">Content</a>
+						<ul>
+							<li><a href="#heading">Heading</a></li>
+							<li><a href="#paragraph">Paragraph</a></li>
+							<li><a href="#blockquote">Blockquote</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#List">List</a>
+						<ul>
+							<li>ulist 3</li>
+							<li>ulist 4</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#Table">Table</a>
+						<ul>
+							<li>ulist 3</li>
+							<li>ulist 4</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#Forms">Forms</a>
+						<ul>
+							<li>ulist 3</li>
+							<li>ulist 4</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<section id="content">
+					<header>
+						<h1>Content</h1>
+					</header>
+					<article id="heading">
+						<header><h2>Heading</h2></header>
+						<div>
+							<h1>Heading level 1</h1>
+							<h2>Heading level 2</h2>
+							<h3>Heading level 3</h3>
+							<h4>Heading level 4</h4>
+							<h5>Heading level 5</h5>
+							<h6>Heading level 6</h6>
+						</div>
+						<footer><a href="#top">Back -></a></footer>
+					</article>
+					<article id="paragraph">
+						<header><h2>Paragraph</h2></header>
+						<div>
+							<p>The element represents a paragraph. </p>
+							<p>Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.</p>
+						</div>
+						<footer><a href="#top">Back -></a></footer>
+					</article>
+					<article id="blockquote">
+							<header><h2>Blockquote</h2></header>
+							<div>
+								<p>A block quotation indicates that the enclosed text is an texted quotation.</p>
+								<p>A URL for the source of the quotaion may be given using the cite attribute.</p>
+								<cite><a href="#!">Describe a reference.</a></cite>
+							</div>
+							<footer><a href="#top">Back -></a></footer>
+						</article>
+				</section>
+				<section id="List">
+					<h2>List</h2>
+				</section>
+				<section id="Table">
+					<h2>Table</h2>
+				</section>
+				<section id="Forms">
+					<h2>Forms</h2>
+				</section>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
+
+
 		<hr color="#03A9F4" width="100%">
 		<h2>Content sectioning</h2>
 		<hr color="#4FC3F7" width="100%">
-		<h1>Heading level 1</h1>
-		<h2>Heading level 2</h2>
-		<h3>Heading level 3</h3>
-		<h4>Heading level 4</h4>
-		<h5>Heading level 5</h5>
-		<h6>Heading level 6</h6>
-		<p>The element represents a paragraph.Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</p>
+
 		<div>
 				The HTML Content Division <span>(div)</span> elementis the generic container for flow content. It has no effect on the content or layout until styled using CSS.
 				<br>
