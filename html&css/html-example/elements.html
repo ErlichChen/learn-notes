@@ -9,6 +9,7 @@
 			<header>
 				<h1>HTML elements</h1>
 				<p></p>
+				<hr color="#03A9F4" width="100%">
 			</header>
 			<nav>
 				<ul>
@@ -18,24 +19,12 @@
 							<li><a href="#heading">Heading</a></li>
 							<li><a href="#paragraph">Paragraph</a></li>
 							<li><a href="#blockquote">Blockquote</a></li>
+							<li><a href="#list">List</a></li>
+							<li><a href="#table">Table</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#List">List</a>
-						<ul>
-							<li>ulist 3</li>
-							<li>ulist 4</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#Table">Table</a>
-						<ul>
-							<li>ulist 3</li>
-							<li>ulist 4</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#Forms">Forms</a>
+						<a href="#form">Form</a>
 						<ul>
 							<li>ulist 3</li>
 							<li>ulist 4</li>
@@ -69,23 +58,120 @@
 						<footer><a href="#top">Back -></a></footer>
 					</article>
 					<article id="blockquote">
-							<header><h2>Blockquote</h2></header>
-							<div>
-								<p>A block quotation indicates that the enclosed text is an texted quotation.</p>
-								<p>A URL for the source of the quotaion may be given using the cite attribute.</p>
-								<cite><a href="#!">Describe a reference.</a></cite>
-							</div>
+						<header><h2>Blockquote</h2></header>
+						<div>
+							<p>A block quotation indicates that the enclosed text is an texted quotation.</p>
+							<p>A URL for the source of the quotaion may be given using the cite attribute.</p>
+							<cite><a href="#!">Describe a reference.</a></cite>
+						</div>
+						<footer><a href="#top">Back -></a></footer>
+					</article>
+					<article id="list">
+						<header><h2>List</h2></header>
+						<ul>
+							<li>ulist item1</li>
+							<li>ulist item2</li>
+							<li>ulist item3</li>
+						</ul>
+						<ol>
+							<li>olist item1</li>
+							<li>olist item2</li>
+							<li>olist item3</li>
+						</ol>
+						<dl>
+							<dt>dlist item1</dt>
+							<dd>dlist item1 description</dd>
+							<dt>dlist item2</dt>
+							<dd>dlist item2 description</dd>
+						</dl>
+						<footer><a href="#top">Back -></a></footer>
+					</article>
+					<article id="table">
+							<header><h2>Table</h2></header>
+							<table width="500" border="1" cellspacing="0" cellpadding="0">
+								<caption>Table Caption</caption>
+								<thead>
+									<tr>
+										<th>head</th>
+										<th scope="col">head 1</th>
+										<th scope="col">head 2</th>
+										<th scope="col">head 3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">th1</th>
+										<td>td1</td>
+										<td>td2</td>
+										<td>td3</td>
+									</tr>
+									<tr>
+										<th scope="row">th2</th>
+										<td>td1</td>
+										<td colspan="2">td2</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">th3</th>
+										<td>td1</td>
+										<td colspan="2" rowspan="2">td2</td>
+									</tr>
+									<tr>
+										<td>td1</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<th scope="row">footer</th>
+										<td colspan="3">footer 1</td>
+									</tr>
+								</tfoot>
+							</table>
 							<footer><a href="#top">Back -></a></footer>
 						</article>
 				</section>
-				<section id="List">
-					<h2>List</h2>
-				</section>
-				<section id="Table">
-					<h2>Table</h2>
-				</section>
-				<section id="Forms">
+				<section id="form">
 					<h2>Forms</h2>
+					<form>
+						<fieldset id="forms_input">
+							<legend>Forms input</legend>
+							<p>
+								<label for="input__text">Text Input</label>
+								<input id="input__text" type="text" placeholder="Text Input">
+							</p>
+							<p>
+								<label for="input__password">Password</label>
+								<input id="input__password" type="password" placeholder="Type your Password">
+							</p>
+							<p>
+								<label for="input__webaddress">Web Address</label>
+								<input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+							</p>
+							<p>
+								<label for="input__emailaddress">Email Address</label>
+								<input id="input__emailaddress" type="email" placeholder="name@email.com">
+							</p>
+							<p>
+								<label for="input__phone">Phone Number</label>
+								<input id="input__phone" type="tel" placeholder="(999) 999-9999">
+							</p>
+							<p>
+								<label for="input__search">Search</label>
+								<input id="input__search" type="search" placeholder="Enter Search Term">
+							</p>
+							<p>
+								<label for="input__text2">Number Input</label>
+								<input id="input__text2" type="number" placeholder="Enter a Number">
+							</p>
+							<p>
+								<label for="input__text3" class="error">Error</label>
+								<input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+							</p>
+							<p>
+								<label for="input__text4" class="valid">Valid</label>
+								<input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+							</p>
+						</fieldset>
+					</form>
 				</section>
 			</main>
 			<footer>
@@ -94,7 +180,7 @@
 		</div>
 
 
-		<hr color="#03A9F4" width="100%">
+
 		<h2>Content sectioning</h2>
 		<hr color="#4FC3F7" width="100%">
 
@@ -128,205 +214,5 @@
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;我是文字</p>
 		&yen;
 
-		<!-- ######################################## -->
-		<h2>List context</h2>
-		<hr color="#4FC3F7" width="100%">
-
-		<h3>Unordered list</h3>
-		<ul>
-			<li>ulist 1</li>
-			<li>ulist 2
-				<ul>
-					<li>ulist 3</li>
-					<li>ulist 4</li>
-				</ul>
-			</li>
-		</ul>
-
-		<h3>Ordered list</h3>
-		<ol>
-			<li>olist 1</li>
-			<li>olist 2</li>
-			<li>olist 3</li>
-		</ol>
-
-		<h3>Description list</h3>
-		<dl>
-			<dt>dlist 1</dt>
-			<dd>dlist 1 description</dd>
-
-			<dt>dlist 2</dt>
-			<dd>dlist 2 description</dd>
-		</dl>
-
-		<!-- ######################################## -->
-		<h2>Table context</h2>
-		<hr color="#4FC3F7" width="100%">
-		<table width="500" border="1" cellspacing="0" cellpadding="0">
-			<thead>
-				<tr>
-					<th>head</th>
-					<th scope="col">head 1</th>
-					<th scope="col">head 2</th>
-					<th scope="col">head 3</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">th1</th>
-					<td>td1</td>
-					<td>td2</td>
-					<td>td3</td>
-				</tr>
-				<tr>
-					<th scope="row">th2</th>
-					<td>td1</td>
-					<td colspan="2">td2</td>
-				</tr>
-				<tr>
-					<th scope="row" rowspan="2">th3</th>
-					<td>td1</td>
-					<td colspan="2" rowspan="2">td2</td>
-				</tr>
-				<tr>
-					<td>td1</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<th scope="row">foot</th>
-					<td colspan="3">food 1</td>
-				</tr>
-			</tfoot>
-		</table>
-
-		<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
-				<caption><h4 style="color: pink; font-size:25px;">test</h4></caption>
-				<tr height="60">
-					<td>xxxxx</td>
-					<td><input type="text" value="北京" style="color: #ccc;" /></td>
-				</tr>
-				<tr height="60">
-					<td>用户名</td>
-					<td><input type="text" value="andy" /></td>
-				</tr>
-				<tr height="60">
-					<td>
-						<label for="suibian">密码</label>
-					</td>
-					<td><input type="password" value="110120" maxlength="6" id="suibian" /></td>
-				</tr>
-				<!-- 一下是 年龄 -->
-				<tr height="60">
-					<td>年龄</td>
-					<td>
-						<select name="" id="">
-							 <option value="">选择年份</option>  <!-- option选项 -->
-							 <option value="">1990</option>  <!-- option选项 -->
-							 <option value="">1991</option>  <!-- option选项 -->
-							 <option value="">1992</option>  <!-- option选项 -->
-							 <option value="">1993</option>  <!-- option选项 -->
-							 <option value="">1994</option>  <!-- option选项 -->
-						</select>
-						<select name="" id="">
-							 <option value="">选择月份</option>  <!-- option选项 -->
-							 <option value="">1月份</option>  <!-- option选项 -->
-							 <option value="">2月份</option>  <!-- option选项 -->
-							 <option value="">3月份</option>  <!-- option选项 -->
-							 <option value="">4月份</option>  <!-- option选项 -->
-							 <option value="">5月份</option>  <!-- option选项 -->
-						</select>
-
-					</td>
-				</tr>
-				<!-- 一下是 籍贯 -->
-				<tr height="60">
-					<td>年龄</td>
-					<td>
-						<select name="" id="">
-							 <option value="">籍贯</option>  <!-- option选项 -->
-							 <option value="" selected="selected">北京</option>  <!-- option选项 -->
-							 <option value="">哈尔滨</option>  <!-- option选项 -->
-							 <option value="">青岛</option>  <!-- option选项 -->
-							 <option value="">大连</option>  <!-- option选项 -->
-
-						</select>
-
-					</td>
-				</tr>
-
-
-				<tr height="60">
-					<td>性别</td>
-					<td style="color: blue;">
-						x <input type="radio"  name="sex"/>
-						y <input type="radio" name="sex" checked="checked" />
-					</td>
-
-				</tr>
-				<tr>
-					<td>喜欢的类型</td>
-					<td>
-						 x <input type="checkbox" name="love">
-						 x    <input type="checkbox" name="love">
-						 x   <input type="checkbox" name="love">
-						 x  <input type="checkbox" name="love" checked="checked" />
-					</td>
-
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-						<input type="button" value="注册">
-						<input type="submit" value="提交">
-						<input type="reset" value="重置">
-						<input type="image" src="btn.png" />
-					</td>
-				</tr>
-				<tr>
-					<td>上传头像</td>
-					<td>
-						<input type="file" >
-
-					</td>
-
-				</tr>
-				<tr>
-					<td>给我留言</td>
-					<td>
-						<textarea name="" id="" cols="50" rows="10" style="color: #ccc;">不支持富文本
-						</textarea>
-
-					</td>
-
-				</tr>
-
-			</table>
-
-		<!-- ######################################## -->
-		<h2>Forms</h2>
-		<hr color="#4FC3F7" width="100%">
-
-
-		<label>  用户名：<input type="text">  </label>
-	 <hr>
-	 <label for="pwd">
-	 	123123123
-	 </label>
-
-	 	用户名：<input type="text">
-	 	密码：<input type="password" id="pwd">
-
-
-		 <form action="" method="post">
-
-				用户名: <input type="text" name="yonghuming" value="用户名"> <br /> <br />
-
-				密　码: <input type="password" name="mima1"><br /> <br />
-				密　码: <input type="password" name="mima2"><br /> <br />
-				性别： <input type="radio" name="sex">
-				<input type="submit" value="提交所填">
-				<input type="reset" value="重新填写">
-			</form>
 	</body>
 </html>
