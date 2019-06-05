@@ -35,3 +35,27 @@ final foo = const []; // Error: foo = [1];
 ```
 
 ## Built-in Types
+
+### numbers
+
+Integer(int) values no larger than 64 bits, depending on the platform.
+64-bit (double-precision) floating-point numbers, as specified by the IEEE 754 standard.
+
+```dart
+var x = 1;
+var hex = 0xff;
+```
+
+### strings
+
+### booleans
+
+### lists
+
+### sets
+
+### maps
+
+### runes
+
+### symbols
