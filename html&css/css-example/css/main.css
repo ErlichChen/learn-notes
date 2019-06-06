@@ -1,3 +1,26 @@
-div {
-	color: blue;
+
+header {
+	text-align: center;
+}
+
+.header_wrapper {
+	display: inline-block;
+	width: 50%;
+	height: 100px;
+
+}
+
+header .title {
+	font-size: 100px;
+	color: #2196F3;
+}
+
+nav a {
+	text-decoration: none;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: #2196F3;
 }
