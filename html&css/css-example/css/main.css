@@ -1,26 +1,119 @@
+/* colors level 500 */
+.red        { color: #F44336; }
+.pink       { color: #E91E63; }
+.purple     { color: #9C27B0; }
+.deepPurple { color: #673ab7; }
+.indigo     { color: #3F51B5; }
+.blue       { color: #2196F3; }
+.lightBlue  { color: #03A9F4; }
+.cyan       { color: #00BCD4; }
+.green      { color: #009688; }
+.teal       { color: #4CAF50; }
+.lightGreen { color: #8BC34A; }
+.lime       { color: #CDDC39; }
+.yellow     { color: #FFEB3B; }
+.amber      { color: #FFC107; }
+.orange     { color: #FF9800; }
+.deepOrange { color: #FF5722; }
+.brown      { color: #795548; }
+.grey       { color: #9E9E9E; }
+.blueGrey   { color: #607D8B; }
+.black      { color: #000000; }
+
+.grey50     { color: #F5F5F5; }
+
+* {
+	font-family: Arial;
+}
+
+body {
+	background-color: #4CAF50;
+}
 
 header {
 	text-align: center;
 }
 
+.subtitle {
+	text-align: left;
+	text-indent: 2em;
+	font-size: 14px;
+}
+
 .header_wrapper {
 	display: inline-block;
-	width: 50%;
+	width: 300px;
 	height: 100px;
-
 }
 
 header .title {
 	font-size: 100px;
-	color: #2196F3;
+	font-weight: 600;
 }
 
 nav a {
-	text-decoration: none;
 	width: 120px;
 	height: 50px;
 	line-height: 50px;
 	font-size: 20px;
 	color: #FFFFFF;
 	background-color: #2196F3;
+}
+
+/* Font styling */
+
+.font_underline1 {
+	text-decoration: underline;
+}
+
+.font_underline2 {
+	text-decoration: underline dotted red;
+}
+
+.font_underline3 {
+	text-decoration: underline wavy red;
+}
+
+.font_underline4 {
+	text-decoration: underline overline red;
+}
+
+.font_underline5 {
+	text-decoration: line-through;
+}
+
+.font_family1 {
+	font-family: "Arial";
+}
+
+.font_family2 {
+	font-family: "Courier New";
+}
+
+.font_family3 {
+	font-family: "Georgia";
+}
+
+.font_family4 {
+	font-family: "Times New Roman";
+}
+
+.font_family5 {
+	font-family: "Verdana";
+}
+
+.font-stacks {
+	font-family: "Helvetica", "Arial", "sans-serif";
+}
+
+.font-size1 {
+	font-size: 14px;
+}
+
+.font-size2 {
+	font-size: 1em;
+}
+
+.font-size3 {
+	font-size: 1rem;
 }
