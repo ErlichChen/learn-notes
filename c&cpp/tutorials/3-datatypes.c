@@ -33,5 +33,33 @@ int main(void)
 	printf("char %c ---> size %d\n", e, size_e);
 	printf("short %d ---> size %d\n", f, size_f);
 	printf("long %ld ---> size %d\n", g, size_g);
+
+	// decimal
+	int dec=10;
+	printf("%d\n", dec);
+
+	// octonary
+	int oct=010;
+	printf("%o\n", oct);
+
+	// hexadecimal
+	int hex=0X10;
+	printf("%x\n", hex);
+
+	char ch;
+	ch=0x5f+2;
+	// ch=0x7f+2; warning: implicit conversion from 'int' to 'char' changes value from 129 to -127
+	printf("%c\n",ch);
+	// printf("%d\n",ch);
+
+	float r = 2;
+	float s1 = r * r * 3.14;
+
+	printf("%1.2f\n", s1);
+
+	double r2 = 2.0;
+	double s2 = r2 * r2 * 3.14;
+	printf("%f\n", s2);
+
 	return 0;
 }
