@@ -126,9 +126,7 @@ nav a {
 }
 
 .test_a:visited {  /*这个链接我们已经点过的样子  已访问过链接*/
-
 	color: orange;
-
 }
 
 .test_a:hover {  /*鼠标经过连接时候的样子*/
@@ -137,5 +135,16 @@ nav a {
 
 .test_a:active {  /*鼠标按下时候的样子*/
 	color: green;
+}
 
+.block {
+	display: block;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
 }
