@@ -49,5 +49,33 @@ agree(同意), allow(允许), believe(相信), doubt(怀疑), find(发现), know
 
 5. 表示存在外观拥有所有的动词
 
-appear(呈现), be(是), contain(包含), consist(存在于), belong(属于), fit(合适), have(有), matter(要紧), need(需要), owe(拥有), prove(证明), possess(拥有), remain(留下), seem(好像), show(说明), suit(适合)
+appear(呈现), be(是), contain(包含), consist(存在于), belong(属于), fit(合适), have(有), matter(要紧), need(需要), owe(拥有), prove(证明), possess(拥有), remain(留下), seem(好像), show(说明), suit(适合)。
 
+### 在时间，条件状语从句中表示将要发生的动作
+
+Much as I like it, I will not buy it.
+Strike while the icon is hot.
+If it's fine tomorrow, we'll go to the Greate Wall.
+When it's completed, the new railway will run for 250 miles.
+
+### 表示已预先计划或安排的肯定将要发生的动作
+
+come(来), go(去), start(出发), begin(开始), leave(离开), return(返回), stop(停下来)。
+
+Schools begin on September 1st in China.
+They leave for London next week.
+The train starts at 7:45 am.
+
+### 表示主语的特征职业能力
+
+They come from the United States.
+He works in a company.
+
+### 表示陈述和声明
+
+I declare the exhibition open.
+I love you. I hate him.
+
+### 其他
+Here she comes.
+Here goes the bell.
