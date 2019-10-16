@@ -2,6 +2,32 @@
 
 ## Tools
 
+### Version manager
+
+install nvm
+
+```bash
+brew update
+brew install nvm
+```
+
+add a few lines to your ~/.bash_profile, ~/.zshrc or ~/.profile.
+```bash
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+install node
+```bash
+nvm install 6
+```
+
+use node
+
+```bash
+nvm use 6
+```
+
 ### Gulp
 
 [Automate and enhance your workflow](https://github.com/gulpjs/gulp)
