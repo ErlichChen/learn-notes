@@ -14,6 +14,8 @@ calm down: 平静下来; 镇定下来; 别冲动
 carry out: 执⾏，实⾏; 贯彻; 实现; 完成
 catch up: 赶上; 把...缠住; 追上
 clean up: 清理; ⼤捞⼀笔; 打扫; 收拾⼲净
+check in: 报到; 记录; 到达并登记
+check out: 检验; 结账离开; 通过考核; 盖章
 come back: 回来; 记起; 恢复原状，重新流⾏; 归来; 恢复
 come down: 下来，降落; 流传下来; 倒塌; 落魄; 失势; 下降
 come in:   进来; 到达; 流⾏起来
@@ -29,7 +31,7 @@ fall behind: 拖⽋; 落在后⾯; 失利; 掉队
 fall down:   跌倒; 失败; 倒塌; 落下
 figure out: 解决; 算出; 想出; 理解; 断定
 fill in:  填写; 填充; 替代
-fill out: 填写; 变丰满; 变⼤大
+fill out: 填写; 变丰满; 变⼤
 fill up:  填补; 装满; 堵塞
 find out: 找出; 查明; 发现; 揭发
 
