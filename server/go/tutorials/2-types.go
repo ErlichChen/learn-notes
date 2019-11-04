@@ -1,6 +1,26 @@
+/*
+ * Types
+ */
 package main
 
 import "fmt"
+
+func main2() {
+	mainStr()
+}
+
+func mainStr() {
+	var a byte = 'a'
+	var b string = "a"
+	// 换行\n \\表示一个、
+	var c string = "hello\nstring"
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	// 在go语言中一个汉字算成3个字符，为了和linux同一处理
+	num := len(c)
+	fmt.Println(num)
+}
 
 func main() {
 
