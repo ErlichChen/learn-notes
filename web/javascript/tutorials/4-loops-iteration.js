@@ -68,13 +68,14 @@ do {
 console.log("---------- test ----------");
 
 console.log("---------- bank interest ----------");
-var initialMoney = 3000000;
-console.log("initial money " + initialMoney);
-var money = initialMoney;
-var rate = 0.04;
-for (var i = 0; i < 3; i++) {
+var salary = 10000;
+console.log("salary per month: " + salary);
+var money = 0;
+var rate = 0.003;
+for (var i = 0; i < 240; i++) {
 	money += money * rate;
-	console.log("you will get %d in %d year", money, (i + 1));
+	money += salary;
+	console.log("you will get %d in %d month", money, (i + 1));
 }
 
 console.log("---------- fibonacci rabbit ----------");
