@@ -21,7 +21,7 @@ define(['jquery', 'underscore'], function($, _){
   function a(){}; // private because it's not returned(see below)
   function b(){}; // public because it's returned
   function c(){}; // public because it's returned
-  
+
   // exposed public methods
   return {
     b: b,
@@ -37,43 +37,6 @@ Note that the dependency to variable order is important.
 Also note that we can map the dependencies to any arbitrary variables we want here. If we change $ to $$ in the code above, all jQuery references within our function block will be $$ instead of $.
 
 And note, most importantly, that you can't reference the variables $ and _ outside of the function, because it's sandboxed from other code. That's the goal here!
-
-## CommonJS
-
-CommonJS is a style you may be familar with if you're written anything in Node(which uses a slight variant). It's also been gaining traction on the frontend with Browserify.
-
-Using the same format as before, here's what our foo module looks like in CommonJS:
-
-```js
-// filename: foo.js
-// dependencies
-var $ = require('jqurey');
-
-// methods
-function myFunc(){};
-
-// exposed public method(single)
-module.exports = myFunc;
-```
-
-And our more complicate example, with multiple dependencies and multiple exposed methods
-
-```js
-// filename: foo.js
-var $ = require('jquery');
-var _ = require('underscore');
-
-// methods
-function a(){}; // private because it's omitted from module.exports
-function b(){}; // public because it's defined in module.exports
-function c(){}; // public because it's defined in module.exports
-
-// exposed public methods
-module.exports = {
-  b: b,
-  c: c
-}
-```
 
 ## UMD
 
