@@ -2,29 +2,25 @@
  * Control flow
  */
 
-/**
- * increment and decrement operation
- */
+console.log("----- pre increment/decrement-----");
 
-console.log("----- pre increment -----");
-var x1   = 1;
-var y1   = ++x1;
+var x1 = 1;
+var y1 = ++x1;
 console.log("x1: " + x1);
 console.log("y1: " + y1);
 var sum1 = ++x1 + 1;
 console.log("sum1: " + sum1)
 
 console.log("----- post increment -----");
-var x2   = 1;
-var y2   = x2++;
+
+var x2 = 1;
+var y2 = x2++;
 console.log("x2: " + x2);
 console.log("y2: " + y2);
 var sum2 = x2++ + 1;
 console.log("sum2: " + sum2);
 
-/**
- * if - else statement
- */
+console.log("----- if else statement -----");
 
 var num1 = 1;
 var num2 = 2;
@@ -37,55 +33,74 @@ if(str1 === "str"){
 	console.log("str1 == \"str\"" + (str1 === "str"));
 }
 
+var score = NaN;
+if (!isNaN(score)) {
+	if (score > 90 && score <= 100) {
+		console.log("score is A");
+	} else if (score > 80) {
+		console.log("score is B");
+	} else if (score > 70) {
+		console.log("score is C");
+	} else if (score >= 60) {
+		console.log("score is D");
+	} else {
+		console.log("E级");
+	}
+} else {
+	console.log("num is NaN");
+}
 
+console.log("----- conditional operator -----");
 
-    //提示用户请输入年龄----
-//    var age=prompt("请您输入您的年龄");//弹框---并且有输入,输入的内容在age变量中
-//    console.log(age);//最终的结果是字符串的类型
+var x3 = 10;
+var y3 = 20;
+var result1 = x3 > y3 ? x3 : y3;
+console.log(result1);
 
+console.log("----- switch operator -----");
 
+var jiBie = "A";
+switch (jiBie) {
+	case "A":
+		console.log("90到100之间");
+		break;
+	case "B":
+		console.log("80到90之间");
+		break;
+	case "C":
+		console.log("70到80之间");
+		break;
+	case "D":
+		console.log("60到70之间");
+		break;
+	default :
+		console.log("0到59之间");
+}
 
-    //案例1:
-//    var age = parseInt(prompt("请您输入年龄"));
-//    //判断
-//    if (age >= 18) {
-//      console.log("可以看电影了,嘎嘎...");
-//    } else {
-//      console.log("看什么看,回家写作业去");
-//    }
+var num = "10";
+console.log("\"10\" == 10: ", "10" == 10);
+console.log("\"10\" === 10: ", "10" === 10);
+switch (num) {
+	case 10:
+		console.log("Number 10");
+		break;
+	case "10":
+		console.log("String 10");
+		break;
+}
 
-
-
-    //练习2:判断这个数字是奇数还是偶数
-
-    var number=parseInt(prompt("请输入一个数字"));
-    if(number%2==0){
-      console.log("偶数");
-    }else{
-      console.log("奇数");
-    }
-		var score = Number(prompt("请您输入成绩"));//有bug
-    if (!isNaN(score)) {//如果为true就说明 不是数字
-      if (score > 90 && score <= 100) {
-        console.log("A级");
-      } else if (score > 80) {
-        console.log("B级");
-      } else if (score > 70) {
-        console.log("C级");
-      } else if (score >= 60) {
-        console.log("D级");
-      } else {
-        console.log("E级");
-      }
-    } else {
-      console.log("您输入有误");
-    }
-
-    //练习:判断一个年份是不是闰年
-    //定义变量存储一个年份
-    var year = 2017;
-    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-      console.log("闰年");
-    } else {
-      console.log("平年");
-    }
+var month=12;
+switch (month){
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12: console.log("Month " + month, "has 31 days"); break;
+	case 4:
+	case 6:
+	case 9:
+	case 11: console.log("Month " + month, "has 30 days"); break;
+	case 2:  console.log("Month " + month, "has 28 days"); break;
+}
