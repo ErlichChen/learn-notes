@@ -1,4 +1,8 @@
 {
     "python.linting.pylintEnabled": false,
-    "python.pythonPath": "/Users/chenxuewei/.pyenv/versions/env-3.6.6/bin/python"
+    "python.pythonPath": "/Users/chenxuewei/.pyenv/versions/env-3.6.6/bin/python",
+    "files.associations": {
+        "stdio.h": "c",
+        "__locale": "c"
+    }
 }

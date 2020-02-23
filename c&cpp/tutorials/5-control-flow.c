@@ -55,4 +55,53 @@ int main(void) {
 
 	system("pause");
 	return EXIT_SUCCESS;
+
+
+	int a = 40;
+	int b = 50;
+	int c = 30;
+	//��Ŀ
+	//int d = a>b ? 1 : 0;
+	//����ʽ1?(����ʽ2?���1:���2):(����ʽ3?���1:���2);
+	int d = a > b ? (a > c ? a : c) :( b > c ? b : c);
+	printf("%d\n", d);
+
+	return EXIT_SUCCESS;
+
+	int a;
+	scanf("%d", &a);
+	//switch (a)
+	//{
+	//case 1:
+	//	printf("a��ֵΪ��%d", a);
+	//	break;
+	//case 10:
+	//	printf("a��ֵΪ��%d\n", a);
+	//	break;
+	//default:
+	//	printf("a��ɶ��\n");
+	//	break;
+	//}
+
+	switch (a/10)
+	{
+	case 10:
+		//printf("����\n");
+		//break;
+	case 9:
+		printf("����\n");
+		break;
+	case 8:
+		printf("����\n");
+		break;
+	case 7:
+		//printf("����\n");
+		//break;
+	case 6:
+		printf("����\n");
+		break;
+	default:
+		printf("������\n");
+		break;
+	}
 }
