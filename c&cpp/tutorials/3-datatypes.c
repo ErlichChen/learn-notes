@@ -99,7 +99,5 @@ int main(void)
 	printf("Range of double %e to %e\n", DBL_MIN, DBL_MAX);
 	printf("Range of long double %Le to %Le\n", LDBL_MIN, LDBL_MAX);
 
-
-
 	return 0;
 }
