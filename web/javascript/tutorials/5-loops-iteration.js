@@ -5,7 +5,6 @@
 /**
  * A for loop repeate until a specified condition evaluates to false. The js for loop is similar to the java and c for loop.
  */
-console.log("---------- for ----------");
 
  // caculate the sum of all even and odd numbers between 1 - 100
  var sum1 = 0;
@@ -19,6 +18,15 @@ console.log("---------- for ----------");
  }
  console.log(sum1); // 2550
  console.log(sum2); // 2500
+
+ for(var i = 100; i <= 200; i++){
+	if(i%7 == 0){
+		console.log(i);
+		break;
+	} else {
+		continue;
+	}
+}
 
  // print square
  for (var i = 0; i <= 5; i++) {
@@ -39,7 +47,6 @@ for (var i = 0; i <= 5; i++) {
 /**
  * A while statement executes its statements as long as specified consition evaluates to true
  */
-console.log("---------- while ----------");
 
 // caculate the sum of numbers between 1-100
 var sum = 0; // sum
@@ -54,20 +61,15 @@ console.log("sum: " + sum);
 /**
  * The do while statement repeates unit a pecified condition evaluates to false.
  */
-console.log("---------- do while ----------");
 
+// do while
 var i = 0;
 do {
   i += 1;
   console.log(i);
 } while (i < 0);
 
-/**
- * test
- */
-console.log("---------- test ----------");
-
-console.log("---------- bank interest ----------");
+// bank interest
 var salary = 10000;
 console.log("salary per month: " + salary);
 var money = 0;
@@ -78,7 +80,7 @@ for (var i = 0; i < 240; i++) {
 	console.log("you will get %d in %d month", money, (i + 1));
 }
 
-console.log("---------- fibonacci rabbit ----------");
+// fibonacci rabbit
 var preRabbits = 1;
 var rabbits = 2;
 var temp = 0;
