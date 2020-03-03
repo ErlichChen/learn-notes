@@ -1,7 +1,8 @@
+// +build ignore
 package main
 
 // package format
 
-func main3() {
+func main() {
 
 }
