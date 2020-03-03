@@ -115,25 +115,6 @@ func main() {
 	// fmt.Println(d)
 	// fmt.Println(_)
 
-	//var a int64 =10
-	// a := 10 //int
-	// fmt.Printf("%d\n", a)
-	// //var b float64 =10
-	// b := 10.0 //float64
-	// //b:=10//int
-	// fmt.Printf("%f\n", b)
-	// var c bool = true
-	// fmt.Printf("%t\n", c)
-	// var d byte = 'A'
-	// fmt.Printf("%c\n", d)
-	// var e string = "hello"
-	// fmt.Printf("%s\n", e)
-
-	// fmt.Printf("%p\n", &a)
-
-	// //%% 会打印一个%
-	// fmt.Printf("35%%")
-
 	//计算机能够识别的进制  二进制 八进制 十进制 十六进制
 
 	// a := 123   //十进制数据
@@ -179,48 +160,4 @@ func add(a int, b int) int {
 // 	// 在go语言中一个汉字算成3个字符，为了和linux同一处理
 // 	num := len(c)
 // 	fmt.Println(num)
-// }
-
-// func main1() {
-
-// 	// bool
-// 	var bo1 bool
-// 	fmt.Println(bo1)
-// 	bo1 = true
-// 	fmt.Println(bo1)
-// 	bo2 := true
-// 	fmt.Println(bo2)
-
-// 	// float
-// 	var fl32 float32
-// 	var fl64 float64
-// 	// float32 7 valid numbers, add 1 to end of number
-// 	fl32 = 3.141593400000000
-// 	// float64 15 valid numbers
-// 	fl64 = 3.1415936273242342324367464375
-// 	fmt.Println(fl32)
-// 	fmt.Println(fl64)
-
-// 	// byte
-// 	var b1 byte = '0'
-// 	var b2 byte = 'a'
-// 	// var b3 string = "a"
-// 	fmt.Println(b1)
-// 	fmt.Println(b2)
-// 	fmt.Printf("%c,%c \n", b1, b2)
-// 	// fmt.Println(b2 == b3)
-
-// 	// string
-// 	var str string = "hello literals"
-// 	fmt.Println(str)
-
-// 	// a cn works is as three characters, same with linux
-// 	var str_cn string = "你好 字面量"
-// 	num := len(str_cn)
-// 	fmt.Println(num)
-
-// 	// %s is stop at the \0
-// 	var str0 string = "hello\nliterals"
-// 	fmt.Printf("%s\n", str0)
-// 	// fmt.Println(str0)
 // }
