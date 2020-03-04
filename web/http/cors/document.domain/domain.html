@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <iframe id="ifr" src="http://b.tblog.com:3004/domain2.html"></iframe>
+  <script>
+    document.domain = 'tblog.com';
+    function aa(str) {
+      console.log(str);
+    }
+
+    window.onload = function () {
+      document.querySelector('#ifr').contentWindow.bb('aaa');
+
+    }
+
+  </script>
+</body>
+</html>
