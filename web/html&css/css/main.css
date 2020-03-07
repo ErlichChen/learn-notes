@@ -1,36 +1,64 @@
-/* colors level 500 */
-.red        { color: #F44336; }
-.pink       { color: #E91E63; }
-.purple     { color: #9C27B0; }
-.deepPurple { color: #673ab7; }
-.indigo     { color: #3F51B5; }
-.blue       { color: #2196F3; }
-.lightBlue  { color: #03A9F4; }
-.cyan       { color: #00BCD4; }
-.green      { color: #009688; }
-.teal       { color: #4CAF50; }
-.lightGreen { color: #8BC34A; }
-.lime       { color: #CDDC39; }
-.yellow     { color: #FFEB3B; }
-.amber      { color: #FFC107; }
-.orange     { color: #FF9800; }
-.deepOrange { color: #FF5722; }
-.brown      { color: #795548; }
-.grey       { color: #9E9E9E; }
-.blueGrey   { color: #607D8B; }
-.black      { color: #000000; }
+@import "colors.css";
 
-.grey50     { color: #F5F5F5; }
+@font-face {
+	font-family: 'robotoregular';
+	src: url('./fonts/Roboto-Regular-webfont.eot');
+	src: url('./fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('./fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+			 url('./fonts/Roboto-Regular-webfont.woff') format('woff'),
+			 url('./fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+			 url('./fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotothen';
+	src: url('./fonts/Roboto-Thin-webfont.eot');
+	src: url('./fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('./fonts/Roboto-Thin-webfont.woff2') format('woff2'),
+			 url('./fonts/Roboto-Thin-webfont.woff') format('woff'),
+			 url('./fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+			 url('./fonts/Roboto-Thin-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 * {
-	font-family: Arial;
+	padding: 0;
+  margin: 0;
+	font-family: 'robotothen';
 }
 
 body {
-	background-color: #4CAF50;
+	background-color:var(--lightGreen);
 }
 
-header {
+nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color:var(--green);
+
+}
+
+nav a {
+	float: left;
+	color: var(--white);
+}
+
+.title {
+	padding: 0.5em;
+	text-align: center;
+	font-size: 3em;
+	color: var(--white);
+}
+
+.title .subtitle {
+	font-size: 0.5em;
+}
+
+/* header {
 	text-align: center;
 }
 
@@ -58,7 +86,7 @@ nav a {
 	font-size: 20px;
 	color: #FFFFFF;
 	background-color: #2196F3;
-}
+} */
 
 /* Font styling */
 
