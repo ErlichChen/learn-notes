@@ -58,6 +58,57 @@ nav a {
 	font-size: 0.5em;
 }
 
+header h2 {
+	color: var(--white);
+}
+
+.box-margin {
+	/* display: inline-block; */
+	width: 90%;
+	height: 160px;
+	margin: 0 auto;
+	border: 2px dashed var(--green);
+	padding: 10px;
+	background-color: var(--white);
+}
+
+.box-margin > p {
+	color: var(--green);
+}
+
+.box-border {
+	height: 110px;
+	padding: 10px;
+	background-color: var(--lightGreen);
+}
+
+.box-border > p {
+	color: var(--white);
+}
+
+.box-padding {
+	height: 60px;
+	padding: 10px;
+	background-color: var(--white);
+}
+
+.box-padding > p {
+	color: var(--green);
+}
+
+.box-content {
+	height: 20px;
+	border: 2px dashed var(--green);
+	padding: 10px;
+	background-color: var(--white);
+}
+
+.box-content > p {
+	color: var(--green);
+}
+
+
+
 /* header {
 	text-align: center;
 }
@@ -68,16 +119,6 @@ nav a {
 	font-size: 14px;
 }
 
-.header_wrapper {
-	display: inline-block;
-	width: 300px;
-	height: 100px;
-}
-
-header .title {
-	font-size: 100px;
-	font-weight: 600;
-}
 
 nav a {
 	width: 120px;
