@@ -10,8 +10,8 @@ int main(void)
 
 	// stack momery
 	printf("Array address: %p\n", arr);
-	printf("First  element address: %p\n", &arr[0]);
-	printf("Second element address: %p\n", &arr[1]);
+	printf("1st element address: %p\n", &arr[0]);
+	printf("2nd element address: %p\n", &arr[1]);
 
 	// dimensional array
 	int arr2[3][3] =
