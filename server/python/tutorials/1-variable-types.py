@@ -1,6 +1,5 @@
 '''
-	Learn Python
-	1. variable types
+variable types
 '''
 print("Hello Python!")
 
