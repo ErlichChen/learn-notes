@@ -51,3 +51,6 @@ Companion webpage to the book "Mathematics For Machine Learning"
 ## [500lines](https://github.com/aosabook/500lines)
 
 Architecture of Open Source Applications series.
+
+## [计算机书籍](https://github.com/iamshuaidi/CS-Book)
+
