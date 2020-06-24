@@ -20,10 +20,10 @@ int gcd(int var1, int var2)
 	return result;
 }
 
-int main(void)
+void inline_asm(void)
 {
-	int result = 0;
-  int input = 1;
+    int result = 0;
+    int input = 1;
 
 	asm volatile (
 	    "movl %1, %0\n"
@@ -53,6 +53,5 @@ int main(void)
 	int first = 15, second = 35;
 	result = gcd(first, second);
 	printf("result = %d\n", result);
-	return 0;
 }
 
