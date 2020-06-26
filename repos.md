@@ -54,3 +54,7 @@ Architecture of Open Source Applications series.
 
 ## [计算机书籍](https://github.com/iamshuaidi/CS-Book)
 
+## [机器学习宝典](https://github.com/yuanxiaosc/Machine-Learning-Book)
+
+
+
