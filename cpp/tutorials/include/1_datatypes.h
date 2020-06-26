@@ -1,0 +1,6 @@
+#ifndef TUTORIALS_1_DATATYPES_H
+#define TUTORIALS_1_DATATYPES_H
+
+void data_types();
+
+#endif //TUTORIALS_1_DATATYPES_H
