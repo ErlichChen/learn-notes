@@ -155,37 +155,28 @@ void copy_string(char *str)
     free(newStr);
 }
 
-
 void memory_set()
 {
+    // memset is the assignment of bytes
     int *p = (int *)malloc(sizeof(int) * 10);
-    memset(p, 0, 10);
-    memset(p, 1, 5);
+    memset(p, 1, 10); // error 10 bytes
     for (int i = 0; i < 10; i++)
     {
         printf("%d ", p[i]);
     }
     free(p);
+    printf("\n");
 
-    //memset(p, 0, 40);
-    //for (int i = 0; i < 10; i++)
-    //{
-    //	printf("%d\n", p[i]);
-    //}
-    //char * p = malloc(sizeof(char) * 10);
-    //memset(p, 0, 10);
-    //printf("%s\n", p);
-
-
-//    int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
-//    memset(arr, 0, 40);
-//    for (int i = 0; i < 10; i++)
-//    {
-//        printf("%d\n", arr[i]);
-//    }
-
-
+    char *str = malloc(sizeof(char) * 10);
+    memset(str, 'a', 10);
+    for (int i = 0; i < 10; i++)
+    {
+    	printf("%c ", str[i]);
+    }
+    free(str);
+    printf("\n");
 }
+
 int main1502()
 {
     int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
