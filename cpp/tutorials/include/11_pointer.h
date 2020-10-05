@@ -1,0 +1,6 @@
+#ifndef TUTORIALS_11_POINTER_H
+#define TUTORIALS_11_POINTER_H
+
+void pointer();
+
+#endif //TUTORIALS_11_POINTER_H
