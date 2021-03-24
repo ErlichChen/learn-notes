@@ -16,3 +16,5 @@ Blender: 3D设计
 
 ## Windows
 Solidworks: 机械3D设计
+
+Codota: AI 代码自动完成工具
